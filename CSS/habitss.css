@@ -5,8 +5,8 @@
   }
   
   body {
-    background-color: #4e4e4e;
-    color: white;
+    background: rgb(54,74,54);
+    background: radial-gradient(circle, rgba(54,74,54,1) 0%, rgba(59,119,80,1) 24%, rgba(49,103,54,1) 47%, rgba(40,84,44,1) 71%, rgba(44,61,49,1) 96%);
   
     height: 100vh;
   }
@@ -21,21 +21,20 @@
   }
 
   button {
-    padding: 16px 24px;
-    border-radius: 8px;
-    border: 1px solid #84CC16;
-    background-color: transparent;
-    color: white;
+    font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid rgb(66, 241, 90);
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px rgb(66, 241, 90);  
+    
+  }
 
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    
-    font-family: 'inter';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 125%;  
-    
+  button:hover {
+    transform: translate(5px, -5px);
   }
 
   #form-habits{
